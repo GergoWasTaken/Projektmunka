@@ -1,10 +1,19 @@
 function kuldes() {
+
+    //------------------------//
+    // jó válaszok eltárolása //
+    //------------------------//
+
     const jovalasz1 = document.getElementById("valasz3").value;
     const jovalasz2 = document.getElementById("feladat2_valasz1").value;
 
     const kerdes1valasz = document.querySelector('input[name="valaszok"]:checked')?.value;
     const eredmeny1 = document.getElementById('eredmeny1');
-    
+
+    //-------------//
+    // első kérdés //
+    //-------------//
+
     if (kerdes1valasz) {
         if (kerdes1valasz == jovalasz1) {
             eredmeny1.innerText = "Helyes válasz!";
@@ -18,7 +27,10 @@ function kuldes() {
         eredmeny1.style.color = "orange";
     }
 
-    // Második kérdés
+    //----------------//
+    // második kérdés //
+    //----------------//
+
     const kerdes2valasz = document.querySelector('input[name="valaszok2"]:checked')?.value;
     const eredmeny2 = document.getElementById('eredmeny2');
     if (kerdes2valasz) {
