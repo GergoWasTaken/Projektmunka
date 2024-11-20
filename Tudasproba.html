@@ -32,32 +32,32 @@
         <main class="row">
             <div class="col-12">
                 <form class="row">
-                    <fieldset class="col-6">
+                    <fieldset class="col-sm-6">
                         <div class="card text-white bg-dark m-3" style="max-width: auto;">
                             <div class="card-header">1. kérdés</div>
                             <div class="card-body">
                             <h5 class="card-title">Melyik a számláló ciklus?</h5>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="valaszok" id="valasz1">
+                                <input class="form-check-input" type="radio" name="valaszok" id="valasz1" value="a">
                                 <label class="form-check-label" for="valasz1">
                                   While
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="valaszok" id="valasz2">
+                                <input class="form-check-input" type="radio" name="valaszok" id="valasz2" value="b">
                                 <label class="form-check-label" for="valasz2">
                                   Do-While
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="valaszok" id="valasz">
-                                <label class="form-check-label" for="valasz">
+                                <input class="form-check-input" type="radio" name="valaszok" id="valasz3" value="c">
+                                <label class="form-check-label" for="valasz3">
                                   For
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="valaszok" id="valasz">
-                                <label class="form-check-label" for="valasz">
+                                <input class="form-check-input" type="radio" name="valaszok" id="valasz4" value="d">
+                                <label class="form-check-label" for="valasz4">
                                   Nem tudom
                                 </label>
                             </div>
@@ -65,32 +65,32 @@
                         </div>
                     </fieldset>
                         
-                    <fieldset class="col-6">
+                    <fieldset class="col-sm-6">
                         <div class="card text-white bg-dark m-3" style="max-width: auto;">
                             <div class="card-header">2. kérdés</div>
                             <div class="card-body">
                             <h5 class="card-title">Melyik a hátultesztelő ciklus?</h5>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="valaszok2" id="feladat2_valasz">
-                                <label class="form-check-label" for="feladat2_valasz">
+                                <input class="form-check-input" type="radio" name="valaszok2" id="feladat2_valasz1" value="a">
+                                <label class="form-check-label" for="feladat2_valasz1">
                                   Do-While
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="valaszok2" id="feladat2_valasz">
-                                <label class="form-check-label" for="feladat2_valasz">
+                                <input class="form-check-input" type="radio" name="valaszok2" id="feladat2_valasz2" value="b">
+                                <label class="form-check-label" for="feladat2_valasz2">
                                   Foreach
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="valaszok2" id="feladat2_valasz">
-                                <label class="form-check-label" for="feladat2_valasz">
+                                <input class="form-check-input" type="radio" name="valaszok2" id="feladat2_valasz3" value="c">
+                                <label class="form-check-label" for="feladat2_valasz3">
                                   Nem tudom
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="valaszok2" id="feladat2_valasz">
-                                <label class="form-check-label" for="feladat2_valasz">
+                                <input class="form-check-input" type="radio" name="valaszok2" id="feladat2_valasz4" value="d">
+                                <label class="form-check-label" for="feladat2_valasz4">
                                   Nincs ilyen ciklus!
                                 </label>
                             </div>
@@ -99,12 +99,12 @@
                     </fieldset>
                     
                     <fieldset class="col-12">
-                        <div class="card text-white bg-dark" id="card3" style="max-width: 30rem;">
+                        <div class="card text-white bg-dark" id="card3" style="max-width: 40rem;">
                             <div class="card-header">Válasz beküldés</div>
                             <div class="card-body">
-                            <a href="#" class="btn btn-primary w-50 mb-2" id="gomb" onclick="kuldes()">Küldés</a>
-                            <h5 class="card-title">1. kérdés: <span id="kerdes1"></span></h5>
-                            <h5 class="card-title">2. kérdés: <span id="kerdes2"></span></h5>
+                            <a href="#" class="btn btn-primary w-50 mx-auto d-block" onclick="kuldes()">Küldés</a>
+                            <h5 class="card-title">1. kérdés: <span id="eredmeny1"></span></h5>
+                            <h5 class="card-title">2. kérdés: <span id="eredmeny2"></span></h5>
                             </div>
                         </div>
                     </fieldset>
@@ -115,6 +115,7 @@
 
         </footer>
     </div>
+<script src="Tudasproba.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
