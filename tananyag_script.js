@@ -6,7 +6,6 @@ function gomb() {
     const kepkartyaC = document.getElementById('kepkartya-c');
     const kepkartyaJs = document.getElementById('kepkartya-js');
 
-    
     if (felhasznaloNev === '') {
         hibaUzenet.textContent = 'Kérlek, add meg a neved!';
         koszonokartya.style.display = 'none';
@@ -24,28 +23,42 @@ function gomb() {
 
     koszonolista.innerHTML = koszones;
     koszonokartya.style.display = 'block';
+
     
+    const cardBodyC = kepkartyaC.querySelector('.card-body');
+    cardBodyC.innerHTML = ''; 
+
+    const titleC = document.createElement('h5');
+    titleC.textContent = 'C# nyelv';
+    titleC.classList.add('mb-3', 'text-center'); 
+
     const imgC = document.createElement('img');
     imgC.src = 'c_ciklus.png';
     imgC.alt = 'C# ciklus';
-    imgC.classList.add('img-fluid', 'm-3','mx-auto','d-block');
+    imgC.classList.add('img-fluid', 'm-3', 'mx-auto', 'd-block');
 
-    const cardBodyC = kepkartyaC.querySelector('.card-body');
-    cardBodyC.innerHTML = ''; 
-    cardBodyC.appendChild(imgC);
+    cardBodyC.appendChild(titleC); 
+    cardBodyC.appendChild(imgC); 
     kepkartyaC.style.display = 'block'; 
 
     
+    const cardBodyJs = kepkartyaJs.querySelector('.card-body');
+    cardBodyJs.innerHTML = ''; 
+
+    const titleJs = document.createElement('h5');
+    titleJs.textContent = 'JavaScript nyelv';
+    titleJs.classList.add('mb-3', 'text-center'); 
+
     const imgJs = document.createElement('img');
     imgJs.src = 'js_ciklus.png';
     imgJs.alt = 'JavaScript ciklus';
-    imgJs.classList.add('img-fluid', 'm-3','mx-auto','d-block'); 
+    imgJs.classList.add('img-fluid', 'm-3', 'mx-auto', 'd-block');
 
-    const cardBodyJs = kepkartyaJs.querySelector('.card-body');
-    cardBodyJs.innerHTML = ''; 
-    cardBodyJs.appendChild(imgJs);
+    cardBodyJs.appendChild(titleJs); 
+    cardBodyJs.appendChild(imgJs); 
     kepkartyaJs.style.display = 'block'; 
 }
+
 
 
 function jelenitsdMegDatumot() {
