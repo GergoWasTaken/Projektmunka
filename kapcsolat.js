@@ -1,5 +1,5 @@
 function bekuld(){
-    let uzenet = document.getElementById("uzenet").value;
+    let uzenet = document.getElementById("uzenet").value.trim();
     if(uzenet == ""){
         alert("Hiba: üres mező!");
     }

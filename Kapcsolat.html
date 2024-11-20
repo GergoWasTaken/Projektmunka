@@ -8,13 +8,27 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="kapcsolat.css">
 <title>Kapcsolat</title>
 </head>
 <body>
         <header>
-            //navbar
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-link" href="Tananyag.html">Tananyag</a>
+                    <a class="nav-link" href="Tudasproba.html">Tudáspróba</a>
+                    <a class="nav-link active fw-bold" aria-current="page" href="Kapcsolat.html">Kapcsolat</a>
+                    </div>
+                </div>
+                </div>
+            </nav>
         </header>
-        <main class="container">
+        <main class="container bg-dark text-light rounded mt-5">
             <div class="row">
                 <h2>Kapcsolat</h2>
                 <form>
@@ -22,7 +36,7 @@
                         <label for="message" class="form-label">Üzenet:</label>
                         <input type="text" class="form-control" id="uzenet">
                     </div>
-                    <div class="mt-3">
+                    <div class="mt-3 mb-3">
                         <button class="btn btn-primary" onclick="bekuld()">Beküldés</button>
                     </div>
                 </form>
