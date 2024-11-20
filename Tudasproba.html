@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="Tudasproba.css">
+<title>Tudáspróba</title>
+</head>
+<body>
+    <div class="container-fluid">    
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" href="Tananyag.html">Tananyag</a>
+                      <a class="nav-link active fw-bold" aria-current="page" href="Tudasproba.html">Tudáspróba</a>
+                      <a class="nav-link" href="Kapcsolat.html">Kapcsolat</a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <main class="row">
+            <div class="col-12">
+                <form class="row">
+                    <fieldset class="col-6">
+                        <div class="card text-white bg-dark m-3" style="max-width: auto;">
+                            <div class="card-header">1. kérdés</div>
+                            <div class="card-body">
+                            <h5 class="card-title">Melyik a számláló ciklus?</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="valaszok" id="valasz1">
+                                <label class="form-check-label" for="valasz1">
+                                  While
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="valaszok" id="valasz2">
+                                <label class="form-check-label" for="valasz2">
+                                  Do-While
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="valaszok" id="valasz">
+                                <label class="form-check-label" for="valasz">
+                                  For
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="valaszok" id="valasz">
+                                <label class="form-check-label" for="valasz">
+                                  Nem tudom
+                                </label>
+                            </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                        
+                    <fieldset class="col-6">
+                        <div class="card text-white bg-dark m-3" style="max-width: auto;">
+                            <div class="card-header">2. kérdés</div>
+                            <div class="card-body">
+                            <h5 class="card-title">Melyik a hátultesztelő ciklus?</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="valaszok2" id="feladat2_valasz">
+                                <label class="form-check-label" for="feladat2_valasz">
+                                  Do-While
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="valaszok2" id="feladat2_valasz">
+                                <label class="form-check-label" for="feladat2_valasz">
+                                  Foreach
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="valaszok2" id="feladat2_valasz">
+                                <label class="form-check-label" for="feladat2_valasz">
+                                  Nem tudom
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="valaszok2" id="feladat2_valasz">
+                                <label class="form-check-label" for="feladat2_valasz">
+                                  Nincs ilyen ciklus!
+                                </label>
+                            </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset class="col-12">
+                        <div class="card text-white bg-dark" id="card3" style="max-width: 30rem;">
+                            <div class="card-header">Válasz beküldés</div>
+                            <div class="card-body">
+                            <a href="#" class="btn btn-primary w-50 mb-2" id="gomb" onclick="kuldes()">Küldés</a>
+                            <h5 class="card-title">1. kérdés: <span id="kerdes1"></span></h5>
+                            <h5 class="card-title">2. kérdés: <span id="kerdes2"></span></h5>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
