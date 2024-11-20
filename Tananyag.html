@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="tananyag.css">
+<title>Tananyag</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active fw-bold" aria-current="page" href="Tananyag.html">Tananyag</a>
+                        <a class="nav-link" href="Tudasproba.html">Tudáspróba</a>
+                        <a class="nav-link" href="Kapcsolat.html">Kapcsolat</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container flex-grow-1">
+        <div class="bg-dark p-3 text-light mt-5 rounded">
+            <div>
+                <form id="urlap">
+                    <div class="mb-3">
+                        <label for="felhasznaloNev" class="form-label fs-1 text">Felhasználói név bekérése</label>
+                        <input type="text" class="form-control" id="felhasznaloNev" placeholder="Írd be a neved" required>
+                        <div id="hibaUzenet" class="hiba-uzenet"></div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="gomb()">Köszönés</button>
+                </form>
+            </div>
+
+            <div id="koszonokartya" class="card mt-4 text-dark" style="display: none;">
+                <div class="card-body">
+                    <h5 class="card-title">Köszönöm, hogy itt vagy!</h5>
+                    <ul id="koszonolista"></ul>
+                </div>
+            </div>
+            
+            <div id="kepkartya-c" class="card mt-4 text-dark col-6 p-3 " style="display: none;">
+                <div class="card-body">
+                    
+                </div>
+            </div>
+            
+            <div id="kepkartya-js" class="card mt-4 text-dark col-6 p-3" style="display: none;">
+                <div class="card-body">
+                   
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light text-center p-3">
+        Mai dátum: <span id="aktualisDatum"></span>
+    </footer>
+
+<script src="tananyag_script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
