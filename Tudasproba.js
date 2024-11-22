@@ -7,12 +7,16 @@ function kuldes() {
     const jovalasz1 = document.getElementById("valasz3").value;
     const jovalasz2 = document.getElementById("feladat2_valasz1").value;
 
+    //----------------------------//
+    // kijelölt válasz eltárolása //
+    //----------------------------//
+
     const kerdes1valasz = document.querySelector('input[name="valaszok"]:checked')?.value;
     const eredmeny1 = document.getElementById('eredmeny1');
 
-    //-------------//
-    // első kérdés //
-    //-------------//
+    //-----------------------//
+    // első kérdés eldöntése //
+    //-----------------------//
 
     if (kerdes1valasz) {
         if (kerdes1valasz == jovalasz1) {
@@ -27,9 +31,9 @@ function kuldes() {
         eredmeny1.style.color = "orange";
     }
 
-    //----------------//
-    // második kérdés //
-    //----------------//
+    //--------------------------//
+    // második kérdés eldöntése //
+    //--------------------------//
 
     const kerdes2valasz = document.querySelector('input[name="valaszok2"]:checked')?.value;
     const eredmeny2 = document.getElementById('eredmeny2');
